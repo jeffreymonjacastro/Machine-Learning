@@ -65,10 +65,10 @@ plt.scatter(x_test, y_test, color="blue")
 plt.plot(x_test, y_pred, color="red")
 plt.show()
 
-# print("Maximo Error:", metrics.max_error(y_test, y_pred))
-# print("Mean Absolute Error:", metrics.mean_absolute_error(y_test, y_pred))
-# print("Mean Squared Error:", metrics.mean_squared_error(y_test, y_pred))
-# print("R2:", metrics.r2_score(y_test, y_pred))
+print("Maximo Error:", metrics.max_error(y_test, y_pred))
+print("Mean Absolute Error:", metrics.mean_absolute_error(y_test, y_pred))
+print("Mean Squared Error:", metrics.mean_squared_error(y_test, y_pred))
+print("R2:", metrics.r2_score(y_test, y_pred))
 
 ## Modelo con statsmodels
 x_train = sm.add_constant(x_train)
